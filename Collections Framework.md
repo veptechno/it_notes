@@ -10,6 +10,8 @@ title: Collections Framework
 
 Все классы лежат в пакете *java.util*.
 
+gg
+
 ## Структура классов наследуемых от [Collection](/d12QhvOUQU-Fl5p6sGT8Wg)
 
 ```graphviz
