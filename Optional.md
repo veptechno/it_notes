@@ -38,3 +38,10 @@ class Optional<T>
 | `<U> Optional<U> map(Function<T, U>)`                                                   | Если объект не *EMPTY*, то применяет к нему функцию, иначе возвращает *EMPTY* |
 | `<U> Optional<U> flatMap(Function<T, Optional<U>>)`                                     | Если объект не *EMPTY*, то применяет к нему функцию, иначе возвращает *EMPTY* |
 | `<X extends Throwable> T orElseThrow(Supplier<? extends X> exceptionSupplier) throws X` | Либо возвращает значение, либо кидает исключение                              |
+
+
+## Optional для примитивов
+
+Существуют классы OptionalDouble, OptionalInt и OptionalLong для работы с примитивами. Логика работы такая же, но методы получения объектов называются по другому (`getAsDouble()`, `getAsInt()` и `getAsLong()`).
+
+Также там нет методов `filter()`, `ofNullable()`, `map()` и `flatMap()`.
