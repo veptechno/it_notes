@@ -138,3 +138,14 @@ Producer-extends, consumer-super.
 Поставщик-extends, поглотитель-super.
 
 Если лист параметризован `? extends class`, то мы можем оттуда только доставать. Если `? super class` то мы можем туда класть всё, что class и всё что наследуется.
+
+# Advanced
+
+## Исключения
+
+Возможно делать такие записи
+```java=
+public <X extends Throwable> int orElseThrow() throws X {
+
+}
+```
