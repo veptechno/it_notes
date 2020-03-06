@@ -10,6 +10,7 @@ title: TimeZone Class
 
 ## Получение
 
+* `getDefault()` - возвращает зону выбранную для данной машины по умолчанию
 * `getTimeZone(String ID)` - ID это например "Asia/Barnaul". Список можно получить с помощью метода `getAvailableIDs()`.
 * `getTimeZone(ZoneId zoneId)` - класс инкапсулирующий зону
 
